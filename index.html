@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #1e293b;
+        }
+
+        header {
+            background: #142b4a;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #142b4a, #2464a5);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+            color: #e0eaff;
+        }
+
+        .section {
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            color: #1d4e89;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .access {
+            background: #e8f0fa;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2464a5;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #142b4a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>CE Management System</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#access">Login</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>College Event Management System</h1>
+
+    <p>
+        A smart platform to manage college events,
+        optimize resource utilization and simplify
+        booking management for students and administrators.
+    </p>
+
+    <a href="#features" class="btn">
+        Explore Platform
+    </a>
+</section>
+
+<section class="section" id="features">
+
+    <h2>Our Platform Features</h2>
+
+    <p class="section-intro">
+        Everything needed to manage college events efficiently.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Event Management</h3>
+            <p>
+                Create, update, view and manage
+                college events from one platform.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Resource Management</h3>
+            <p>
+                Manage classrooms, laboratories,
+                projectors and other college resources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Booking</h3>
+            <p>
+                Submit resource booking requests
+                and check availability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Conflict Detection</h3>
+            <p>
+                Detect overlapping bookings and
+                help prevent resource conflicts.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section access" id="access">
+
+    <h2>Choose Your Portal</h2>
+
+    <p class="section-intro">
+        Separate access for students and administrators.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Admin Portal</h3>
+            <p>
+                Manage events, resources and
+                student booking requests.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Student Portal</h3>
+            <p>
+                Explore events, view resources
+                and request bookings.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>College Event Management System</p>
+    <p>Developed as a College Project</p>
+</footer>
+
+</body>
+</html>
